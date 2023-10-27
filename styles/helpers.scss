@@ -1,0 +1,137 @@
+.wrapper {
+  padding-left: 15rem !important;
+  padding-right: 15rem !important;
+
+  @media only screen and (max-width: $large) {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+
+  @media only screen and (max-width: $small) {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+
+.wrapper-2 {
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+
+  @media only screen and (max-width: $large) {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+
+  @media only screen and (max-width: $small) {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+
+.wrapper-3 {
+  padding-left: 20rem !important;
+  padding-right: 20rem !important;
+
+  @media only screen and (max-width: $large) {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+
+  @media only screen and (max-width: $small) {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+
+//// COLORS
+.color-scheme-3 {
+  background-color: $color-scheme-3 !important;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: black;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+a {
+  font-size: 1.4rem;
+  color: $color-scheme-1;
+}
+
+button {
+  font-size: 1.4rem;
+}
+
+.mb {
+  &4 {
+    margin-bottom: 4rem;
+  }
+
+  &3 {
+    margin-bottom: 3rem;
+  }
+
+  &2 {
+    margin-bottom: 2rem;
+  }
+
+  &1 {
+    margin-bottom: 1rem;
+  }
+}
+
+.w {
+  &-100 {
+    width: 100% !important;
+  }
+}
+
+.topBorders {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.bottomBorders {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+// .showPassword {
+//   -webkit-text-security: none;
+// }
+
+// .hidePassword {
+//   -webkit-text-security: disc;
+// }
+
+.labelHover {
+  top: 5% !important;
+}
+
+#rememberMe {
+  display: none;
+}
+
+.checked {
+  background-color: $color-scheme-1 !important;
+
+  svg {
+    fill: white !important;
+  }
+}
+
+.clickable {
+  text-decoration: underline;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

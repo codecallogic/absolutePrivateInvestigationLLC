@@ -1,0 +1,131 @@
+// COLORS
+// $color-scheme-1: #e63946;
+// $color-scheme-2: #f1faee;
+// $color-scheme-3: #a8dadc;
+// $color-scheme-4: #457b9d;
+// $color-scheme-5: #1d3557;
+$color-scheme-1: #27340D;
+$color-scheme-2: #44551D;
+$color-scheme-3: #907E4A;
+$color-scheme-4: #6D5315;
+$color-scheme-5: #e23c41;
+$color-scheme-6: #2f8eff;
+
+// SHADES
+$color-dark-grey-1: #272727;
+$color-dark-grey-2: #383b3b;
+$color-light-grey-1: #b3b3b3;
+$color-light-grey-2: #edf2f5;
+$color-light-grey-3: #b3b3b3;
+
+// BASICS
+$color-light-contrast: white;
+$color-dark-contrast: #272727;
+
+//BREAKPOINTS
+$wide-large: 1800px;
+$wide: 1500px;
+$extra-large: 1250px;
+$large-medium: 1100px;
+$large: 992px;
+$extra-medium: 800px;
+$medium: 768px;
+$small: 600px;
+$extra-small: 350px;
+$extra-small-alt-1: 375px;
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box; // Tells the browser to account for any border and padding in the values you specify for an element's width and height
+  font-size: 62.5%; // Sets font-size to 10px
+  scroll-behavior: smooth;
+  padding: env(safe-area-inset);
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/Rubik/Rubik-Black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-Bold';
+  src: url('/fonts/Rubik/Rubik-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url('/fonts/Poppins/Poppins-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('/fonts/PlayfairDisplay/PlayfairDisplay-Italic-VariableFont_wght') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay-Bold';
+  src: url('/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+body {
+  font-family: PlayfairDisplay;
+  font-style: normal;
+  color: black;
+  min-height: 100vh;
+  font-weight: 300;
+  line-height: 1.6;
+  overflow-y: auto;
+  background-color: white;
+
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-scheme-2;
+  }
+}

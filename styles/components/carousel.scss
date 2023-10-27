@@ -1,0 +1,142 @@
+.carousel {
+  position: relative;
+  padding: 5rem 0;
+
+  &-desktop {
+    @media only screen and (max-width: $extra-medium) {
+      display: none !important;
+    }
+  }
+
+  &-mobile {
+    display: none !important;
+
+    @media only screen and (max-width: $extra-medium) {
+      display: flex !important;
+    }
+  }
+
+  &-items {
+    display: flex;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 0 2rem;
+
+    &-item {
+      width: 25%;
+      height: 100%;
+      box-shadow: 0.3rem 0.8rem 0.5rem 0.3rem rgba(0, 0, 0, 0.2);
+      margin-right: 2rem;
+
+      @media only screen and (max-width: $extra-medium) {
+        width: 50%;
+      }
+
+      &-image {
+        height: 20rem;
+
+        @media only screen and (min-width: $wide) {
+          height: 24rem;
+        }
+
+        @media only screen and (max-width: $large) {
+          height: 15rem;
+        }
+
+        @media only screen and (max-width: $extra-medium) {
+          height: 15rem;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      &-title {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 6rem;
+        margin: 0;
+        padding: 0 2rem;
+        text-align: left;
+        font-family: Poppins-Light;
+        text-transform: uppercase;
+        background-color: $color-scheme-3;
+
+        @media only screen and (min-width: $wide) {
+          height: 10rem;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-arrow {
+    &-left {
+      position: absolute;
+      left: -4rem;
+      top: 47.5%;
+      width: 2.5rem;
+      height: 3rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      @media only screen and (max-width: $small) {
+        left: -2rem;
+      }
+    }
+
+    &-right {
+      position: absolute;
+      right: -4rem;
+      top: 47.5%;
+      width: 2.5rem;
+      height: 3rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      @media only screen and (max-width: $small) {
+        right: -2rem;
+      }
+    }
+  }
+
+  &-dots {
+    position: absolute;
+    top: 88%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-button {
+      border-radius: 50%;
+      border: solid 0.2rem black;
+      width: 2rem;
+      height: 2rem;
+      margin-left: 0.5rem;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $color-scheme-1;
+      }
+
+      &-selected {
+        background-color: $color-scheme-1;
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.account {
+  width: 100%;
+  padding: 8rem;
+
+  @media only screen and (max-width: $large) {
+    padding: 2rem;
+  }
+
+  &-user {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    margin: 2rem 0;
+    font-weight: 700;
+    color: $color-light-grey-1;
+
+    @media only screen and (max-width: $large) {
+      padding: 0 3rem;
+    }
+
+    svg {
+      width: 4rem;
+      height: 4rem;
+      margin-right: 1rem;
+    }
+
+    span {
+      margin-left: 1rem;
+      color: $color-scheme-5;
+      transition: all 0.5s;
+
+      &:hover {
+        cursor: pointer;
+        color: $color-scheme-2;
+      }
+    }
+  }
+
+  &-breadcrumbs {
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: $large) {
+      padding: 0 3rem;
+    }
+
+    &-item {
+      display: flex;
+      font-size: 1.8rem;
+      color: $color-light-grey-1;
+
+      &-title {
+        font-size: 2.2rem;
+        font-weight: 700;
+
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+        fill: $color-scheme-1;
+      }
+
+      &-subtitle {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &-dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 3rem 1rem;
+
+    @media only screen and (max-width: $medium) {
+      justify-content: center;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 18rem;
+      height: 15rem;
+      border-radius: 1.2rem;
+      font-size: 1.8rem;
+      font-weight: 300;
+      margin-right: 3rem;
+      margin-bottom: 5rem;
+      background-color: $color-scheme-1;
+      color: white;
+      flex-wrap: wrap;
+      text-align: center;
+      box-shadow: 0.2rem 0.5rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+      transition: all 0.5s;
+
+      @media only screen and (max-width: $medium) {
+        margin-bottom: 2rem;
+      }
+
+      svg {
+        width: 4rem;
+        height: 4rem;
+        margin: 1rem;
+        fill: white;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: $color-scheme-5;
+      }
+    }
+  }
+}
