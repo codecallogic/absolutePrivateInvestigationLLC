@@ -8,42 +8,13 @@ import Carousel from '../components/client/carousel'
 import Footer from '../components/client/footer'
 import Scene from '../components/client/scene'
 
-const Home = ({
-  navMenus,
-  slides, 
-  components, 
-  news,
-  openSearch,
-
-  //// METHODS
-  setNews,
-  setOpenSearch
-}) => {
-  
-  const [activatedComponents, setActivatedComponents] = useState([])
-
-  useEffect(() => {
-    
-    let active
-    
-    if(components.length > 0 ){
-      active = components.filter((item) => item.active.toLowerCase() == 'activated')
-    }
-
-    setActivatedComponents(active)
-    
-  }, [components])
+const Home = ({}) => {
   
   return (
     <>
-    {/* <Toolbar></Toolbar> */}
     <div className="home">
-      <DesktopNav 
-        navMenus={navMenus} 
-        openSearch={openSearch}
-        setOpenSearch={setOpenSearch}
-      ></DesktopNav>
-      <Scene></Scene>
+      <DesktopNav />
+      <Scene />
       
       <div className="home-section-1 wrapper" style={{backgroundImage: `url('/media/home/absurdbulbs.jpeg')`}}>
         <div className="home-section-1-cover" style={{backgroundImage: `url('./media/home/city-welcome-backdrop.png')`}}></div>
@@ -167,7 +138,7 @@ const Home = ({
         </div>
       </div>
 
-      <Footer></Footer>
+      <Footer />
       
     </div>
     </>
